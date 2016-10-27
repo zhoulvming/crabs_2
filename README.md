@@ -29,3 +29,17 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Proxy To Backend
+We create a file next to projects package.json called proxy.conf.json with the content:
+{
+  "/api": {
+    "target": "http://localhost:3000",
+    "secure": false
+  }
+}
+then we edit the package.json file's start script to be:
+"start": "ng serve --proxy-config proxy.conf.json",
+
+
+## https://github.com/kara/leashed-in/tree/master/src

@@ -1,0 +1,9 @@
+<span class="app-action" [class.m2app-dark]="isDarkTheme">
+  <button md-fab (click)="gotoBack()"><md-icon>clear</md-icon></button>
+</span>
+
+<div *ngIf="currentTopic">
+  {{currentTopic.title}}
+  <p md-line></p>
+  <div [innerHTML]="currentTopic.content"></div>
+</div>

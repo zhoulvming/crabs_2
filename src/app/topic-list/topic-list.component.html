@@ -1,0 +1,11 @@
+<md-list>
+  <h3 md-subheader>Today</h3>
+  <md-list-item *ngFor="let topic of topics">
+    <img md-list-avatar [src]="topic.author_avatar_mini">
+    <h4 md-line>{{topic.author_name}}</h4>
+    <p md-line>
+      <span (click)="onSelect(topic)">{{topic.title}} -- {{topic.created}}</span>
+    </p>
+  </md-list-item>
+  <md-divider></md-divider>
+</md-list>
