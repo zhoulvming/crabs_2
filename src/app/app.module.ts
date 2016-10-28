@@ -12,6 +12,7 @@ import { TopicListComponent } from './topic-list/topic-list.component';
 import { TopicDetailComponent } from './topic-detail/topic-detail.component';
 
 import { AppState, InteralStateType, AppUtil } from './shared/services/app.service';
+import { TopicReplyComponent } from './topic-reply/topic-reply.component';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -24,7 +25,8 @@ const APP_PROVIDERS = [
     SidebarComponent,
     HomeComponent,
     TopicListComponent,
-    TopicDetailComponent
+    TopicDetailComponent,
+    TopicReplyComponent
   ],
   imports: [
     BrowserModule,
